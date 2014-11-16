@@ -1,0 +1,10 @@
+@(posts: List[Post])
+
+@main("Welcome to Play") {
+
+    @for(post <- posts){
+        <h1>@post.title</h1>
+        <p>@post.text</p>
+    }
+
+}
