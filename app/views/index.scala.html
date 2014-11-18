@@ -1,10 +1,12 @@
 @(posts: List[Post])
 
-@main("Welcome to Play") {
 
+@main("My blog") {
+<div class="pure-u-1-1">
     @for(post <- posts){
         <h1>@post.title</h1>
-        <p>@post.text</p>
+        <div>@post.text</div>
     }
+</div>
 
 }

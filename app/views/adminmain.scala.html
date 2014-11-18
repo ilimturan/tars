@@ -1,7 +1,6 @@
 @(title: String)(content: Html)
 
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>@title</title>
@@ -15,15 +14,19 @@
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
         <script src="@routes.Assets.at("javascripts/hello.js")" type="text/javascript"></script>
-
     </head>
     <body>
         <div class="container">
             <div class="pure-menu pure-menu-open pure-menu-horizontal">
                 <a href="/" class="pure-menu-heading">İlim Turan</a>
+                <ul>
+                    <li class="pure-menu-selected"><a href="@routes.Admin.loginform" >Login</a></li>
+                    <li class="pure-menu-selected"><a href="@routes.Admin.newform">New</a></li>
+                    <li class="pure-menu-selected"><a href="@routes.Admin.logout">Logout</a></li>
+                </ul>
             </div>
             <div class="pure-g">
-                    @content
+                @content
             </div>
         </div>
     </body>

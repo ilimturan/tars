@@ -5,10 +5,15 @@
 # Home page
 GET         /                               controllers.Application.index()
 
-GET         /admin/loginform                controllers.Admin.loginform()
-POST        /admin/login                    controllers.Admin.login()
 GET         /admin/newform                  controllers.Admin.newform()
-POST        /admin/newa                      controllers.Admin.newa()
+POST        /admin/newadmin                 controllers.Admin.newadmin()
+
+GET         /admin/logout                   controllers.Admin.logout()
+GET         /admin/loginform                controllers.Admin.loginform()
+GET         /admin                          controllers.Admin.loginform()
+POST        /admin/login                    controllers.Admin.login()
+
+GET         /admin/adminpage                controllers.Admin.adminpage()
 
 
 # Map static resources from the /public folder to the /assets URL path

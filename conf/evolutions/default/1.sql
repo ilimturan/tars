@@ -19,6 +19,7 @@ create table user (
   user_name                 varchar(255),
   full_name                 varchar(255),
   email_address             varchar(255),
+  pass_word                 varchar(255),
   is_active                 tinyint(1) default 0,
   constraint pk_user primary key (id))
 ;
